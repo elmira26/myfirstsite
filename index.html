@@ -144,7 +144,7 @@
                             <div class="about__person">
                                <div class="about__paragraph--1">       
                                     <figure class="about__shape">
-                                    <img  class="about__img" src="../img/Poster235.jpg" alt="">
+                                    <img  class="about__img" src="img/Poster235.jpg" alt="">
                                     <div class="about__radius"></div>
                                     </figure>
                                     <p >I have got over 10 years  experience in vocal teaching. 
@@ -192,7 +192,7 @@
                     </div>
                     <div class="main">
                         <div class="main__image" id="image">
-                            <img  class="main__image--img" src="../img/filtered2.png">
+                            <img  class="main__image--img" src="img/filtered2.png">
                         </div>
                         <div class="main__player">
                             <div class="main__songTitle" id="songTitle"></div>
@@ -242,7 +242,7 @@
                 </div>
                 <footer class="footer u-margin-top-10">
                     <div class="footer__logo-box">
-                        <img src="../img/Musicplus-Black-64.png" alt="logo" class="footer__logo-box--logo">   
+                        <img src="img/Musicplus-Black-64.png" alt="logo" class="footer__logo-box--logo">   
                     </div>
                     <div class="row">
                         <div class="col-1-of-2">
@@ -280,7 +280,7 @@ $(this).removeClass("hover");
 <!-- script for player-->
 <script type="text/javascript">
     var songs = ["Closer.mp3","Listen.mp3","Summertime.mp3"];
-    var poster = ["../img/filtered2.png", "../img/about1.png", "../img/poster_svet.jpeg"];
+    var poster = ["img/filtered2.png", "img/about1.png", "img/poster_svet.jpeg"];
     var songTitle = document.getElementById("songTitle");
     var fillBar = document.getElementById("fill");
     var colors = ['#6f03e9', '#b5e8eb', ' #82d7fa'];
@@ -300,10 +300,10 @@ $(this).removeClass("hover");
     function playOrPauseSong(){
         if(song.paused){
             song.play();
-            $("#play img").attr("src","../img/Pause.png");
+            $("#play img").attr("src","img/Pause.png");
         } else{
             song.pause();
-            $("#play img").attr("src","../img/Play.png");
+            $("#play img").attr("src","img/Play.png");
         }
     }
     song.addEventListener('timeupdate', function(){
@@ -317,7 +317,7 @@ $(this).removeClass("hover");
             currentSong = 0;
         }
         playSong();
-        $("#play img").attr("src","../img/Pause.png");
+        $("#play img").attr("src","img/Pause.png");
         $("#image img").attr("src", poster[currentSong]);
         $("#blacklayer").css({background: colors[currentSong]});
     }
@@ -328,7 +328,7 @@ $(this).removeClass("hover");
             currentSong = 2;
         }
         playSong();
-        $("#play img").attr("src","../img/Pause.png");
+        $("#play img").attr("src","img/Pause.png");
         $("#image img").attr("src", poster[currentSong]);
         $("#blacklayer").css({background: colors[currentSong]});
     }
