@@ -1,0 +1,85 @@
+.footer{
+    height: 53%;
+    color: white;
+    background-color: rgb(18, 20, 22);
+    padding: 5rem 0;
+    font-size: 1.4rem;
+    
+  
+    @include respond (tab-land){
+        padding: 3rem 0;
+    }
+    @include respond (phone){
+        padding: 5rem 0;
+    }
+
+   
+    &__logo-box{
+        text-align: center;
+        margin-bottom: 4rem;
+
+        @include respond (tab-land){
+            margin-bottom: 2.5rem;
+        }
+        &--logo{
+        width: 5rem;
+        height: 5rem;
+        background-image: linear-gradient(to right, #6c8178f5, #a0a39c);
+		-webkit-background-clip: padding-box;
+		background-clip: padding-box;
+        color:transparent;
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+
+        @include respond(tab-land){
+            width: 4.2rem;
+            heigth: 4.2rem;
+        }
+        @include respond(tab-port){
+            width: 3.5rem;
+            height: 3.5rem;
+        }
+        }
+    }
+    
+
+    &__navigation{
+        border-top: 1px solid rgb(241, 239, 239);
+        padding-top: 2rem;
+        display: inline-block;
+    }
+
+    &__list{
+        list-style: none;
+    }
+
+    &__item{
+        display: inline-block;
+        &:not(:last-child){
+            margin-right: 1.5rem;
+        }
+    }
+
+    &__link{
+        &:link,
+        &:visited{
+            color: $color-white;
+            background-color: rgb(18, 20, 22);
+            text-decoration: none;
+            text-transform: uppercase;
+            display: inline-block;
+            transition: all .2s
+        }
+        &:hover,
+        &:active{
+            color: $color-aqua;
+            box-shadow: 0 1rem 2rem rgba($color-black, .4);
+            transform: rotate(5deg) scale(1.3);
+        }
+    }
+     &__copyright{
+        padding-top: 2rem;
+        padding-left: 2rem;
+        border-top: 1px solid rgb(241, 239, 239);
+    }
+}

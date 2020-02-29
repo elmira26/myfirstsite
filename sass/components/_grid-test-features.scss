@@ -1,0 +1,28 @@
+
+.grid-test__features{
+  letter-spacing: .2rem;
+  font-size: 1.5rem;
+  color: #fff;
+  &--icon{
+    height: 100%;
+    position: absolute;
+    color: rgb(251, 245, 252);
+    padding: 0rem 1rem 1rem 1rem;
+    text-align: center;
+    transform: translateY(0) scale(1.1);
+    &:hover{
+      transform: translateY(-.7rem) scale(1.22);	
+      color: rgba(249, 249, 255, 0.88);
+    }
+  }
+}
+        
+
+       
+   
+  
+
+
+
+
+  
